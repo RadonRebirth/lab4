@@ -2,7 +2,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1,8,9,10};
+        Random rnd = new Random();
+        int[] nums = new int[5];
+        for(int i=0;i<nums.length;i++) {
+            nums[i] = rnd.nextInt(20);
+        }
         int min = nums[0];
         double Sredn = 0;
 
