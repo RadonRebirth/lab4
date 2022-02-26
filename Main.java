@@ -1,12 +1,16 @@
 package com.company;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Random rnd = new Random();
-        int[] nums = new int[5];
+        Scanner input = new Scanner(System.in); 
+        System.out.println("Введите размерность массива: ");
+        int size = input.nextInt();
+        int[] nums = new int[size];
         System.out.println("Массив :");
         for(int i=0;i<nums.length;i++) {
             nums[i] = rnd.nextInt(20);
